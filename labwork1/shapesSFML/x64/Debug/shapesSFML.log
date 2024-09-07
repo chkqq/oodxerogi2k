@@ -1,0 +1,9 @@
+﻿  CircleShape.cpp
+D:\oodsergei\labwork1\shapesSFML\CircleShape.cpp(21,21): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  RectangleShape.cpp
+  TriangleShape.cpp
+D:\oodsergei\labwork1\shapesSFML\TriangleShape.cpp(19,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\oodsergei\labwork1\shapesSFML\TriangleShape.cpp(21,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\oodsergei\labwork1\shapesSFML\TriangleShape.cpp(23,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
+  shapesSFML.vcxproj -> D:\oodsergei\labwork1\x64\Debug\shapesSFML.exe
