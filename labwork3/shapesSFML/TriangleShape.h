@@ -4,17 +4,18 @@
 #include "ShapeDecorator.h"
 #include <SFML/Graphics.hpp>
 
-class TriangleDecorator : public ShapeDecorator {
+class TriangleDecorator : public ShapeDecorator
+{
 private:
     sf::ConvexShape triangle;
 
 public:
     TriangleDecorator(sf::Vector2f point1, sf::Vector2f point2, sf::Vector2f point3);
-    void draw(sf::RenderWindow& window) override;
-    float getPerimeter() const override;
-    float getArea() const override;
+    void Draw(sf::RenderWindow& window) override;
+    float GetPerimeter() const override;
+    float GetArea() const override;
 
-    void accept(Visitor& visitor) override;
+    void Accept(Visitor& visitor, std::ofstream& outf) override;
 };
 
-#endif // TRIANGLESHAPE_H
+#endif 

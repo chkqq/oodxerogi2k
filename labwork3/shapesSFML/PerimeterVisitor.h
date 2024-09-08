@@ -4,11 +4,12 @@
 #include "Visitor.h"
 #include <iostream>
 
-class PerimeterVisitor : public Visitor {
+class PerimeterVisitor : public Visitor 
+{
 public:
-    void visit(CircleDecorator& circle) override;
-    void visit(RectangleDecorator& rectangle) override;
-    void visit(TriangleDecorator& triangle) override;
+    void Visit(CircleDecorator& circle, std::ofstream& outf) override;
+    void Visit(RectangleDecorator& rectangle, std::ofstream& outf) override;
+    void Visit(TriangleDecorator& triangle, std::ofstream& outf) override;
 };
 
 #endif

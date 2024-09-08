@@ -7,10 +7,10 @@
 class ShapeDecorator 
 {
 public:
-    virtual void draw(sf::RenderWindow& window) = 0;
-    virtual float getPerimeter() const = 0;
-    virtual float getArea() const = 0;
-    virtual void accept(Visitor& visitor) = 0;
+    virtual void Draw(sf::RenderWindow& window) = 0;
+    virtual float GetPerimeter() const = 0;
+    virtual float GetArea() const = 0;
+    virtual void Accept(Visitor& visitor, std::ofstream& outf) = 0;
     virtual ~ShapeDecorator() = default;
 };
 

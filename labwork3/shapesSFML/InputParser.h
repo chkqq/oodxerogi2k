@@ -9,6 +9,5 @@
 #include "TriangleCreator.h"
 
 std::vector<ShapeDecorator*> loadShapesFromFile(const std::string& filename);
-void saveResultsToFile(const std::vector<ShapeDecorator*>& shapes, const std::string& filename);
 
 #endif

@@ -3,9 +3,10 @@
 
 #include "ShapeDecorator.h"
 
-class ShapeCreator {
+class ShapeCreator
+{
 public:
-    virtual ShapeDecorator* createShape(const std::string& parameters) = 0;
+    virtual ShapeDecorator* CreateShape(const std::string& parameters) = 0;
     virtual ~ShapeCreator() = default;
 };
 

@@ -2,41 +2,51 @@
 #include <fstream>
 #include <sstream>
 
-std::vector<ShapeDecorator*> loadShapesFromFile(const std::string& filename) {
+std::vector<ShapeDecorator*> LoadShapesFromFile(const std::string& filename) 
+{
     std::ifstream file(filename);
     std::vector<ShapeDecorator*> shapes;
     std::string line;
-    while (std::getline(file, line)) {
+    while (std::getline(file, line))
+    {
         std::istringstream iss(line);
         std::string type;
         iss >> type;
-        if (type == "CIRCLE:") {
+        if (type == "CIRCLE:")
+        {
             std::string parameters = line.substr(line.find(':') + 1);
-            shapes.push_back(CircleCreator::getInstance().createShape(parameters));
+            shapes.push_back(CircleCreator::GetInstance().CreateShape(parameters));
         }
-        else if (type == "RECTANGLE:") {
+        else if (type == "RECTANGLE:") 
+        {
             std::string parameters = line.substr(line.find(':') + 1);
-            shapes.push_back(RectangleCreator::getInstance().createShape(parameters));
+            shapes.push_back(RectangleCreator::GetInstance().CreateShape(parameters));
         }
-        else if (type == "TRIANGLE:") {
+        else if (type == "TRIANGLE:") 
+        {
             std::string parameters = line.substr(line.find(':') + 1);
-            shapes.push_back(TriangleCreator::getInstance().createShape(parameters));
+            shapes.push_back(TriangleCreator::GetInstance().CreateShape(parameters));
         }
     }
     return shapes;
 }
 
-void saveResultsToFile(const std::vector<ShapeDecorator*>& shapes, const std::string& filename) {
+void SaveResultsToFile(const std::vector<ShapeDecorator*>& shapes, const std::string& filename) 
+{
     std::ofstream file(filename);
-    for (const auto& shape : shapes) {
-        if (dynamic_cast<CircleDecorator*>(shape)) {
-            file << "CIRCLE: P=" << shape->getPerimeter() << "; S=" << shape->getArea() << "\n";
+    for (const auto& shape : shapes) 
+    {
+        if (dynamic_cast<CircleDecorator*>(shape))
+        {
+            file << "CIRCLE: P=" << shape->GetPerimeter() << "; S=" << shape->GetArea() << "\n";
         }
-        else if (dynamic_cast<RectangleDecorator*>(shape)) {
-            file << "RECTANGLE: P=" << shape->getPerimeter() << "; S=" << shape->getArea() << "\n";
+        else if (dynamic_cast<RectangleDecorator*>(shape)) 
+        {
+            file << "RECTANGLE: P=" << shape->GetPerimeter() << "; S=" << shape->GetArea() << "\n";
         }
-        else if (dynamic_cast<TriangleDecorator*>(shape)) {
-            file << "TRIANGLE: P=" << shape->getPerimeter() << "; S=" << shape->getArea() << "\n";
+        else if (dynamic_cast<TriangleDecorator*>(shape)) 
+        {
+            file << "TRIANGLE: P=" << shape->GetPerimeter() << "; S=" << shape->GetArea() << "\n";
         }
     }
 }

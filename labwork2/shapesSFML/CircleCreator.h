@@ -5,12 +5,14 @@
 #include "CircleShape.h"
 #include <sstream>
 
-class CircleCreator : public ShapeCreator {
+class CircleCreator : public ShapeCreator 
+{
 private:
     CircleCreator() {} 
 
 public:
-    static CircleCreator& getInstance() {
+    static CircleCreator& GetInstance()
+    {
         static CircleCreator instance;
         return instance;
     }
@@ -18,12 +20,15 @@ public:
     CircleCreator(const CircleCreator&) = delete;
     void operator=(const CircleCreator&) = delete;
 
-    ShapeDecorator* createShape(const std::string& parameters) override {
+    ShapeDecorator* CreateShape(const std::string& parameters) override 
+    {
         std::istringstream iss(parameters);
         int cx, cy, r;
         char temp;
         iss.ignore(3);
-        iss >> cx >> temp >> cy >> temp >> temp >> temp >> r;
+        iss >> cx >> temp 
+            >> cy >> temp >> temp >> temp 
+            >> r;
         return new CircleDecorator(r, sf::Vector2f(cx, cy));
     }
 };
