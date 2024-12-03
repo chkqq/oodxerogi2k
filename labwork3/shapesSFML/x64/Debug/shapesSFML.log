@@ -1,135 +1,202 @@
 ﻿  AreaVisitor.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(15,25): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
   CircleShape.cpp
-D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.cpp(25,21): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(9,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(15,25): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): error C2065: Shape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,10): error C2923: std::shared_ptr: "Shape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): message : см. объявление "Shape"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(14,51): error C2065: CircleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(14,40): error C2923: std::shared_ptr: "CircleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(14,51): message : см. объявление "CircleShape"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(20,21): error C2065: CircleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(20,10): error C2923: std::shared_ptr: "CircleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(20,21): message : см. объявление "CircleShape"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+  CircleShapeDecorator.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(15,11): error C3668: RectangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(16,11): error C3668: RectangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(15,11): error C3668: TriangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(16,11): error C3668: TriangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(12,24): error C2061: синтаксическая ошибка: идентификатор "CircleShapeDecorator"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(10,21): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(15,17): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(20,12): error C2665: "Visitor::Visit": ни одна перегруженная функция не может преобразовать все типы аргументов
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(14,18): message : может быть "void Visitor::Visit(TriangleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(20,12): message : "void Visitor::Visit(TriangleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "CircleShapeDecorator" в "TriangleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(13,18): message : или       "void Visitor::Visit(RectangleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(20,12): message : "void Visitor::Visit(RectangleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "CircleShapeDecorator" в "RectangleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.cpp(20,12): message : при попытке сопоставить список аргументов "(CircleShapeDecorator, std::ofstream)"
   InputParser.cpp
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,56): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,64): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,88): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,84): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,51): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,77): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,73): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,95): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-  PerimeterVisitor.cpp
-  RectangleShape.cpp
-  TriangleShape.cpp
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.cpp(19,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.cpp(21,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.cpp(23,17): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(12,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(16,11): error C3668: CircleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(17,11): error C3668: CircleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(15,11): error C3668: RectangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(16,11): error C3668: RectangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(15,11): error C3668: TriangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(16,11): error C3668: TriangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(38,9): error C2440: return: невозможно преобразовать "std::shared_ptr<CircleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(38,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(42,9): error C2440: return: невозможно преобразовать "std::shared_ptr<RectangleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(42,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(45,9): error C2440: return: невозможно преобразовать "std::shared_ptr<TriangleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(45,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
   main.cpp
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,56): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,52): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(32,36): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,64): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,88): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(33,84): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,55): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,51): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,77): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,73): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,99): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
-D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(35,95): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
-          with
-          [
-              T=float
-          ]
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(12,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(16,11): error C3668: CircleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(17,11): error C3668: CircleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(15,11): error C3668: RectangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(16,11): error C3668: RectangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(15,11): error C3668: TriangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(16,11): error C3668: TriangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(38,9): error C2440: return: невозможно преобразовать "std::shared_ptr<CircleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleCreator.h(38,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(42,9): error C2440: return: невозможно преобразовать "std::shared_ptr<RectangleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleCreator.h(42,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(45,9): error C2440: return: невозможно преобразовать "std::shared_ptr<TriangleShapeDecorator>" в "std::shared_ptr<MathShapeDecorator>"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleCreator.h(45,9): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+  MathShapeDecorator.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(12,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(16,11): error C3668: CircleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(17,11): error C3668: CircleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(15,11): error C3668: RectangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(16,11): error C3668: RectangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(15,11): error C3668: TriangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(16,11): error C3668: TriangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.cpp(10,14): error C2039: "Accept": не является членом "Shape".
+D:\oodxerogi2k\labwork3\shapesSFML\Shape.h(7,7): message : см. объявление "Shape"
+  PerimeterVisitor.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(15,25): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+  RectangleShape.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(9,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(15,25): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): error C2065: Shape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,10): error C2923: std::shared_ptr: "Shape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): message : см. объявление "Shape"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(13,54): error C2065: RectangleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(13,43): error C2923: std::shared_ptr: "RectangleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(13,54): message : см. объявление "RectangleShape"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(19,21): error C2065: RectangleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(19,10): error C2923: std::shared_ptr: "RectangleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(19,21): message : см. объявление "RectangleShape"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+  RectangleShapeDecorator.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(12,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(16,11): error C3668: CircleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(17,11): error C3668: CircleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShape.h(14,10): error C3668: TriangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(15,11): error C3668: TriangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(16,11): error C3668: TriangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(13,24): error C2061: синтаксическая ошибка: идентификатор "RectangleShapeDecorator"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.cpp(22,12): error C2665: "Visitor::Visit": ни одна перегруженная функция не может преобразовать все типы аргументов
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(14,18): message : может быть "void Visitor::Visit(TriangleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.cpp(22,12): message : "void Visitor::Visit(TriangleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "RectangleShapeDecorator" в "TriangleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(12,18): message : или       "void Visitor::Visit(CircleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.cpp(22,12): message : "void Visitor::Visit(CircleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "RectangleShapeDecorator" в "CircleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.cpp(22,12): message : при попытке сопоставить список аргументов "(RectangleShapeDecorator, std::ofstream)"
+  TriangleShape.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(9,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(15,25): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): error C2065: Shape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,10): error C2923: std::shared_ptr: "Shape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\MathShapeDecorator.h(17,21): message : см. объявление "Shape"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(13,53): error C2065: TriangleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(13,42): error C2923: std::shared_ptr: "TriangleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(13,53): message : см. объявление "TriangleShape"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(19,21): error C2065: TriangleShape: необъявленный идентификатор
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(19,10): error C2923: std::shared_ptr: "TriangleShape" не является допустимым аргументом типа шаблон для параметра "_Ty"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.h(19,21): message : см. объявление "TriangleShape"
+  TriangleShapeDecorator.cpp
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShape.h(14,10): error C3668: CircleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(12,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(15,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(16,11): error C3668: CircleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\CircleShapeDecorator.h(17,11): error C3668: CircleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(8,1): error C2504: Shape: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShape.h(14,10): error C3668: RectangleShape::Draw: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(11,1): error C2504: MathShapeDecorator: не определен базовый класс
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(14,17): error C2061: синтаксическая ошибка: идентификатор "Visitor"
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(15,11): error C3668: RectangleShapeDecorator::GetPerimeter: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\RectangleShapeDecorator.h(16,11): error C3668: RectangleShapeDecorator::GetArea: метод со спецификатором переопределения "override" не переопределяет какие-либо методы базового класса
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(14,24): error C2061: синтаксическая ошибка: идентификатор "TriangleShapeDecorator"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.cpp(19,48): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.cpp(37,12): error C2665: "Visitor::Visit": ни одна перегруженная функция не может преобразовать все типы аргументов
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(13,18): message : может быть "void Visitor::Visit(RectangleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.cpp(37,12): message : "void Visitor::Visit(RectangleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "TriangleShapeDecorator" в "RectangleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\Visitor.h(12,18): message : или       "void Visitor::Visit(CircleShapeDecorator &,std::ofstream &)"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.cpp(37,12): message : "void Visitor::Visit(CircleShapeDecorator &,std::ofstream &)": невозможно преобразовать аргумент 1 из "TriangleShapeDecorator" в "CircleShapeDecorator &"
+D:\oodxerogi2k\labwork3\shapesSFML\TriangleShapeDecorator.cpp(37,12): message : при попытке сопоставить список аргументов "(TriangleShapeDecorator, std::ofstream)"
   Создание кода...
-  shapesSFML.vcxproj -> D:\oodxerogi2k\labwork3\x64\Debug\shapesSFML.exe

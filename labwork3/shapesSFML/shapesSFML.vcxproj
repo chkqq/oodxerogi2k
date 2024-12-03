@@ -145,24 +145,32 @@
   <ItemGroup>
     <ClCompile Include="AreaVisitor.cpp" />
     <ClCompile Include="CircleShape.cpp" />
+    <ClCompile Include="CircleShapeDecorator.cpp" />
     <ClCompile Include="InputParser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathShapeDecorator.cpp" />
     <ClCompile Include="PerimeterVisitor.cpp" />
     <ClCompile Include="RectangleShape.cpp" />
+    <ClCompile Include="RectangleShapeDecorator.cpp" />
     <ClCompile Include="TriangleShape.cpp" />
+    <ClCompile Include="TriangleShapeDecorator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AreaVisitor.h" />
     <ClInclude Include="CircleCreator.h" />
     <ClInclude Include="CircleShape.h" />
+    <ClInclude Include="CircleShapeDecorator.h" />
     <ClInclude Include="InputParser.h" />
+    <ClInclude Include="MathShapeDecorator.h" />
     <ClInclude Include="PerimeterVisitor.h" />
     <ClInclude Include="RectangleCreator.h" />
     <ClInclude Include="RectangleShape.h" />
+    <ClInclude Include="RectangleShapeDecorator.h" />
     <ClInclude Include="ShapeCreator.h" />
-    <ClInclude Include="ShapeDecorator.h" />
+    <ClInclude Include="Shape.h" />
     <ClInclude Include="TriangleCreator.h" />
     <ClInclude Include="TriangleShape.h" />
+    <ClInclude Include="TriangleShapeDecorator.h" />
     <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

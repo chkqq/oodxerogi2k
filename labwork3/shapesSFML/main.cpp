@@ -3,18 +3,19 @@
 #include "PerimeterVisitor.h"
 #include "AreaVisitor.h"
 #include <fstream>
+#include <memory>
 
 void processShapes(
-    std::vector<ShapeDecorator*>& shapes, 
-    PerimeterVisitor& perimeterVisitor, 
+    const std::vector<std::shared_ptr<MathShapeDecorator>>& shapes,
+    PerimeterVisitor& perimeterVisitor,
     AreaVisitor& areaVisitor,
     std::ofstream& outf
 )
 {
-    for (auto& shape : shapes) 
+    for (const auto& shape : shapes)
     {
         shape->Accept(perimeterVisitor, outf);  // Вычисление и вывод периметра
-        shape->Accept(areaVisitor, outf);       // Вычисление и вывод площади
+        shape->Accept(areaVisitor, outf);      // Вычисление и вывод площади
     }
 }
 
@@ -30,47 +31,45 @@ void HandleEvents(sf::RenderWindow& window)
     }
 }
 
-void DrawShapes(sf::RenderWindow& window, const std::vector<ShapeDecorator*>& shapes)
+void DrawShapes(sf::RenderWindow& window, const std::vector<std::shared_ptr<MathShapeDecorator>>& shapes)
 {
     window.clear();
-    for (auto& shape : shapes)
+    for (const auto& shape : shapes)
     {
         shape->Draw(window);
     }
     window.display();
 }
 
-void renderShapes(std::vector<ShapeDecorator*>& shapes) 
+void renderShapes(const std::vector<std::shared_ptr<MathShapeDecorator>>& shapes)
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Shapes Visualization");
 
-    while (window.isOpen()) 
+    while (window.isOpen())
     {
         HandleEvents(window);
         DrawShapes(window, shapes);
     }
 }
 
-void cleanupShapes(std::vector<ShapeDecorator*>& shapes) 
-{
-    for (auto& shape : shapes)
-    {
-        delete shape;
-    }
-}
-
 int main()
 {
-    std::vector<ShapeDecorator*> shapes = loadShapesFromFile("input.txt");
+    // Загрузка фигур из файла
+    auto shapes = loadShapesFromFile("input.txt");
+
+    // Открытие файла для вывода результатов
     std::ofstream outf("output.txt");
+
+    // Создание посетителей для вычислений
     PerimeterVisitor perimeterVisitor;
     AreaVisitor areaVisitor;
 
-    processShapes(shapes, perimeterVisitor, areaVisitor, outf); 
-    renderShapes(shapes);
-    cleanupShapes(shapes);
+    // Обработка фигур
+    processShapes(shapes, perimeterVisitor, areaVisitor, outf);
 
+    // Визуализация фигур
+    renderShapes(shapes);
+
+    // Умные указатели автоматически освобождают память
     return 0;
 }
-//Внедрен паттерн «Посетитель», который отделяет логику вычисления и вывода площади и периметра от самих фигур.
-//Добавлены два посетителя : один для вывода периметра, другой для площади.

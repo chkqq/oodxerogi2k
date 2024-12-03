@@ -1,19 +1,19 @@
 #include "AreaVisitor.h"
-#include "CircleShape.h"
-#include "RectangleShape.h"
-#include "TriangleShape.h"
+#include "CircleShapeDecorator.h"
+#include "RectangleShapeDecorator.h"
+#include "TriangleShapeDecorator.h"
 
-void AreaVisitor::Visit(CircleDecorator& circle, std::ofstream& outf)
+void AreaVisitor::Visit(CircleShapeDecorator& circle, std::ofstream& outf)
 {
     outf << ", Area = " << circle.GetArea() << std::endl;
 }
 
-void AreaVisitor::Visit(RectangleDecorator& rectangle, std::ofstream& outf)
+void AreaVisitor::Visit(RectangleShapeDecorator& rectangle, std::ofstream& outf)
 {
     outf << ", Area = " << rectangle.GetArea() << std::endl;
 }
 
-void AreaVisitor::Visit(TriangleDecorator& triangle, std::ofstream& outf)
+void AreaVisitor::Visit(TriangleShapeDecorator& triangle, std::ofstream& outf)
 {
     outf << ", Area = " << triangle.GetArea() << std::endl;
 }

@@ -7,9 +7,9 @@
 class AreaVisitor : public Visitor 
 {
 public:
-    void Visit(CircleDecorator& circle, std::ofstream& outf) override;
-    void Visit(RectangleDecorator& rectangle, std::ofstream& outf) override;
-    void Visit(TriangleDecorator& triangle, std::ofstream& outf) override;
+    void Visit(CircleShapeDecorator& circle, std::ofstream& outf) override;
+    void Visit(RectangleShapeDecorator& rectangle, std::ofstream& outf) override;
+    void Visit(TriangleShapeDecorator& triangle, std::ofstream& outf) override;
 };
 
 #endif

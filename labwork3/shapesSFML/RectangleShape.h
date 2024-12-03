@@ -1,22 +1,18 @@
 #ifndef RECTANGLESHAPE_H
 #define RECTANGLESHAPE_H
 
-#include "ShapeDecorator.h"
 #include <SFML/Graphics.hpp>
-#include <fstream>
+#include "Shape.h"
 
-class RectangleDecorator : public ShapeDecorator 
+class RectangleShape : public Shape
 {
 private:
     sf::RectangleShape rectangle;
 
 public:
-    RectangleDecorator(sf::Vector2f size, sf::Vector2f position);
+    RectangleShape(sf::Vector2f size, sf::Vector2f position);
     void Draw(sf::RenderWindow& window) override;
-    float GetPerimeter() const override;
-    float GetArea() const override;
-
-    void Accept(Visitor& visitor, std::ofstream& outf) override;
+    sf::RectangleShape& GetRectangleShape();
 };
 
-#endif // RECTANGLESHAPE_H
+#endif

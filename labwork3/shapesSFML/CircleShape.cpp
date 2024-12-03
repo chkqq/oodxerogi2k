@@ -1,7 +1,7 @@
 #include "CircleShape.h"
 #include "Visitor.h"
 
-CircleDecorator::CircleDecorator(float radius, sf::Vector2f position)
+CircleShape::CircleShape(float radius, sf::Vector2f position)
 {
     circle.setRadius(radius);
     circle.setPosition(position);
@@ -10,22 +10,13 @@ CircleDecorator::CircleDecorator(float radius, sf::Vector2f position)
     circle.setOutlineThickness(2);
 }
 
-void CircleDecorator::Draw(sf::RenderWindow& window)
+void CircleShape::Draw(sf::RenderWindow& window)
 {
     window.draw(circle);
 }
 
-float CircleDecorator::GetPerimeter() const
+sf::CircleShape& CircleShape::GetCircleShape()
 {
-    return 2 * 3.14159f * circle.getRadius();
+    return circle;
 }
 
-float CircleDecorator::GetArea() const 
-{
-    return 3.14159f * std::pow(circle.getRadius(), 2);
-}
-
-void CircleDecorator::Accept(Visitor& visitor, std::ofstream& outf)
-{
-    visitor.Visit(*this, outf);
-}

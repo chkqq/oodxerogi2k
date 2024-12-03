@@ -2,20 +2,17 @@
 #define CIRCLESHAPE_H
 
 #include <SFML/Graphics.hpp>
-#include "ShapeDecorator.h"
+#include "Shape.h"
 
-class CircleDecorator : public ShapeDecorator 
+class CircleShape : public Shape 
 {
 private:
     sf::CircleShape circle;
 
 public:
-    CircleDecorator(float radius, sf::Vector2f position);
+    CircleShape(float radius, sf::Vector2f position);
     void Draw(sf::RenderWindow& window) override;
-    float GetPerimeter() const override;
-    float GetArea() const override;
-
-    void Accept(Visitor& visitor, std::ofstream& outf) override;
+    sf::CircleShape& GetCircleShape();
 };
 
 #endif

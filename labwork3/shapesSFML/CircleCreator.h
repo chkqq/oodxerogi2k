@@ -3,12 +3,14 @@
 
 #include "ShapeCreator.h"
 #include "CircleShape.h"
+#include "MathShapeDecorator.h"
 #include <sstream>
+#include <memory>
 
 class CircleCreator : public ShapeCreator
 {
 private:
-    CircleCreator() {} 
+    CircleCreator() {}
 
 public:
     static CircleCreator& getInstance()
@@ -20,16 +22,20 @@ public:
     CircleCreator(const CircleCreator&) = delete;
     void operator=(const CircleCreator&) = delete;
 
-    ShapeDecorator* CreateShape(const std::string& parameters) override 
+    std::shared_ptr<MathShapeDecorator> CreateShape(const std::string& parameters) override
     {
         std::istringstream iss(parameters);
         int cx, cy, r;
         char temp;
+
         iss.ignore(3);
-        iss >> cx >> temp 
+        iss >> cx >> temp
             >> cy >> temp >> temp >> temp
             >> r;
-        return new CircleDecorator(r, sf::Vector2f(cx, cy));
+        auto circleShape = std::make_shared<CircleShape>(
+            static_cast<float>(r),
+            sf::Vector2f(static_cast<float>(cx), static_cast<float>(cy)));
+        return std::make_shared<CircleShapeDecorator>(circleShape);
     }
 };
 

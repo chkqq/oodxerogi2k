@@ -1,7 +1,8 @@
 #include "RectangleShape.h"
 #include "Visitor.h"
 
-RectangleDecorator::RectangleDecorator(sf::Vector2f size, sf::Vector2f position) {
+RectangleShape::RectangleShape(sf::Vector2f size, sf::Vector2f position)
+{
     rectangle.setSize(size);
     rectangle.setPosition(position);
     rectangle.setFillColor(sf::Color::Blue);
@@ -9,18 +10,12 @@ RectangleDecorator::RectangleDecorator(sf::Vector2f size, sf::Vector2f position)
     rectangle.setOutlineThickness(2);
 }
 
-void RectangleDecorator::Draw(sf::RenderWindow& window) {
+void RectangleShape::Draw(sf::RenderWindow& window)
+{
     window.draw(rectangle);
 }
 
-float RectangleDecorator::GetPerimeter() const {
-    return 2 * (rectangle.getSize().x + rectangle.getSize().y);
-}
-
-float RectangleDecorator::GetArea() const {
-    return rectangle.getSize().x * rectangle.getSize().y;
-}
-
-void RectangleDecorator::Accept(Visitor& visitor, std::ofstream& outf) {
-    visitor.Visit(*this, outf);
+sf::RectangleShape& RectangleShape::GetRectangleShape()
+{
+    return rectangle;
 }
